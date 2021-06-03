@@ -1,7 +1,7 @@
 # Webpack Boilerplate
 
 
-A lightweight foundation for your next webpack based frontend project.
+A lightweight foundation for webpack based frontend project.
 
 ### Installation
 
