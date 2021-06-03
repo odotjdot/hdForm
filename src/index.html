@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-8">
+        <h5 class="section-header">Sign up for email updates</h5>
+        <div class="instructions">*Indicates Required Field</div>
+        <form id="theForm">
+          <div class="row">
+            <div class="col-md-6 main-field content-column">
+              <label for="first-name">first name*</label>
+              <input id="first-name" type="text">
+              
+            </div>
+            <div class="col-md-6 main-field content-column">
+              <label for="last-name">last name*</label>
+              <input id="last-name" type="text">
+              
+            </div>
+            <div class="col-md-6 main-field content-column">
+              <label for="email">email address*</label>
+                <input id="email" type="email">
+              
+            </div>
+            <div class="col-md-6 main-field content-column">
+              <label for="organization">organization*</label>
+                <input id="organization" type="text">
+              
+            </div>
+            <div class="col-md-12 main-field content-column">
+              <label for="eu" class="eu">EU Resident*</label>
+              <select name="eu" id="eu">
+                <option value="yes">- SELECT ONE -</option>
+                <option value="yes">YES</option>
+                <option value="no">NO</option>
+                
+              </select>
+            </div>
+            <div class="col-md-6 content-column">
+              <input type="checkbox" id="advances"><label class="checkbox-label" for="advances">Advances</label> 
+            </div>
+            <div class="col-md-6 content-column">
+              <input type="checkbox" id="alerts"> <label class="checkbox-label" for="alerts">Alerts</label> 
+            </div>
+            <div class="col-md-12 content-column">
+              <input type="checkbox" id="other"> <label class="checkbox-label" for="other">Other Communications</label> 
+            </div>
+            <div class="col-md-12 submit-row">
+              <button id="submit" class="button-control">SUBMIT</button> 
+              &nbsp; &nbsp;
+              <button id="reset" class="reset button-control">RESET</button> 
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-2">
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

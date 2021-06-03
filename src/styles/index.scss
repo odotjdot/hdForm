@@ -1,0 +1,123 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  background: url('img/texture.png');
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+h5 {
+  margin: 16px 0;
+  font-weight: 700;
+}
+
+.instructions {
+  font-size: 0.8rem;
+  margin: 16px 0;
+  color: rgb(95, 95, 95);
+}
+
+.main-field {
+  label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 4px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  #eu {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      width: 35%;
+    }
+  }
+}
+
+#theForm {
+  .content-column {
+    margin: 8px 0 16px;
+  }
+
+  input[type=checkbox] {
+    margin-right: 16px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: rgb(145, 145, 145) 0 2px 3px;
+  }
+
+  .checkbox-label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  input,
+  select {
+    border: teal 2px solid;
+    padding: 4px;
+    border-radius: 0;
+    font-size: 0.85rem;
+    box-shadow: rgb(145, 145, 145) 0 2px 3px;
+  }
+
+  input[type=checkbox]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    border: 2px solid teal;
+    border-radius: 0;
+    background-color: white;
+  }
+
+  input[type=checkbox]:checked::after {
+    content: "";
+    // background-color: purple;
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid purple;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+  }
+}
+
+.submit-row {
+  margin-top: 40px;
+}
+
+button {
+  border-radius: 100px;
+  border-width: 0;
+  padding: 8px 16px;
+  width: 130px;
+  font-size: 0.8rem;
+  box-shadow: rgb(145, 145, 145) 0 2px 3px;
+  letter-spacing: 1px;
+
+  &#submit {
+    background-color: purple;
+    color: white;
+  }
+
+  &#reset {
+    background-color: white;
+    color: black;
+  }
+}
