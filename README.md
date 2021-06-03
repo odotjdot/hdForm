@@ -1,7 +1,4 @@
-# Webpack Boilerplate
-
-
-A lightweight foundation for webpack based frontend project.
+# Hero Digital Form
 
 ### Installation
 
